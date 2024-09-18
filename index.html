@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            th, td {
+                border: 1px solid black;
+            }
+            tfoot {
+                background: aqua;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <table> 
+            <!-- apartir daqui estou anunciando a criação de uma tabela -->
+            <thead>
+                <!-- serve para reprensentar um cabeçalho, quais serão as representações das colunas dessa tabela, englobar toda a estrutura do nosso cabeçalho -->
+                <tr>
+                    <!-- serve para representar uma linha no meu cabeçalho -->
+                    <th>Produto</th>
+                    <!-- a tag th será responsavel por cada coluna do nosso cabeçalho -->
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Black Friday</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- representar o corpo da tabela, a estrutura dos dados -->
+                <tr>
+                    <td>Produto 1</td>
+                    <!-- diz respeito a parte dos dados de cada coluna da nossa tabela -->
+                    <td>2</td>
+                    <td>5$</td>
+                    <td rowspan="2">Sim</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>5</td>
+                    <td>10$</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>3</td>
+                    <td>15$</td>
+                    <td>Não</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <!-- rodapé da nossa tabela -->
+                 <tr>
+                    <td colspan="3">Total</td>
+                    <td>30$</td>
+                 </tr>
+            </tfoot>
+        </table>   
+    </body>
+
+</html>
